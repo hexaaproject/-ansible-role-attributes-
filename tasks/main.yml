@@ -2,7 +2,7 @@
 # tasks file for ansible-role-attributes
 - name: Start docker container
   docker_container:
-    name: {{ CONTAINER_NAME }}
+    name: "{{ CONTAINER_NAME }}"
     image: szabogyula/attributes
     state: started
     pull: true
