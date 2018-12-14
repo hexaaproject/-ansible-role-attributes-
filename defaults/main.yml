@@ -1,0 +1,12 @@
+---
+# defaults file for ansible-role-attributes
+ENTITY_ID:                 ~
+DISCOVERY_URL:             ~
+SUPPORT_CONTACT:           ~
+XML_METADATA_PROVIDER:     ~
+DYNAMIC_METADATA_PROVIDER: ~
+ATTRIBUTE_RESOLVERS:       ~
+VIRTUAL_HOST:              ~
+LETSENCRYPT_HOST:          ~
+LETSENCRYPT_EMAIL:         ~
+NOSSL:                     ~

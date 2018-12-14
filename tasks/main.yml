@@ -1,0 +1,22 @@
+---
+# tasks file for ansible-role-attributes
+- name: Start docker container
+  docker_container:
+    name: {{ CONTAINER_NAME }}
+    image: szabogyula/attributes
+    state: started
+    pull: true
+    restart: true
+    restart_policy: unless-stopped
+    env:
+      ENTITY_ID:                 "{{ ENTITY_ID }}"
+      DISCOVERY_URL:             "{{ DISCOVERY_URL }}"
+      SUPPORT_CONTACT:           "{{ SUPPORT_CONTACT }}"
+      XML_METADATA_PROVIDER:     "{{ XML_METADATA_PROVIDER }}"
+      DYNAMIC_METADATA_PROVIDER: "{{ DYNAMIC_METADATA_PROVIDER }}"
+      ATTRIBUTE_RESOLVERS:       "{{ ATTRIBUTE_RESOLVERS }}"
+      VIRTUAL_HOST:              "{{ VIRTUAL_HOST }}"
+      LETSENCRYPT_HOST:          "{{ VIRTUAL_HOST }}"
+      LETSENCRYPT_EMAIL:         "{{ LETSENCRYPT_EMAIL }}"
+      NOSSL:                     "{{ NOSSL }}"
+
