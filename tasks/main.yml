@@ -3,7 +3,7 @@
 - name: Start docker container
   docker_container:
     name: "{{ CONTAINER_NAME }}"
-    image: szabogyula/attributes
+    image: "szabogyula/attributes:{{ IMAGE_TAG }}"
     state: started
     pull: true
     restart: true
@@ -16,8 +16,13 @@
       DYNAMIC_METADATA_PROVIDER:   "{{ DYNAMIC_METADATA_PROVIDER }}"
       ATTRIBUTE_RESOLVERS:         "{{ ATTRIBUTE_RESOLVERS }}"
       VIRTUAL_HOST:                "{{ VIRTUAL_HOST }}"
-      LETSENCRYPT_HOST:            "{{ VIRTUAL_HOST }}"
-      LETSENCRYPT_EMAIL:           "{{ LETSENCRYPT_EMAIL }}"
+      # LETSENCRYPT_HOST:            "{{ VIRTUAL_HOST }}"
+      # LETSENCRYPT_EMAIL:           "{{ LETSENCRYPT_EMAIL }}"
       NOSSL:                       "{{ NOSSL }}"
       BEHIND_SSL_TERMINATOR_PROXY: "{{ BEHIND_SSL_TERMINATOR_PROXY }}"
+    networks:
+      - name: elknet
+    log_driver: gelf
+    log_options:
+      gelf-address: udp://172.17.0.1:12201
 
