@@ -1,7 +1,7 @@
-Role Name
+Attributes
 =========
 
-A brief description of the role goes here.
+Ansible role to run szabogyula/attributes docker image
 
 Requirements
 ------------
