@@ -20,6 +20,7 @@
       # LETSENCRYPT_EMAIL:           "{{ LETSENCRYPT_EMAIL }}"
       NOSSL:                       "{{ NOSSL }}"
       BEHIND_SSL_TERMINATOR_PROXY: "{{ BEHIND_SSL_TERMINATOR_PROXY }}"
+      BRAND:                       "{{ BRAND }}"
     networks:
       - name: elknet
     log_driver: gelf
