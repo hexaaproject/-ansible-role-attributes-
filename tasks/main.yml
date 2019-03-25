@@ -21,9 +21,10 @@
       NOSSL:                       "{{ NOSSL }}"
       BEHIND_SSL_TERMINATOR_PROXY: "{{ BEHIND_SSL_TERMINATOR_PROXY }}"
       BRAND:                       "{{ BRAND }}"
+      LOGLEVEL:                    "{{ LOGLEVEL }}"
     networks:
       - name: elknet
-    log_driver: gelf
-    log_options:
-      gelf-address: udp://172.17.0.1:12201
+#    log_driver: gelf
+#    log_options:
+#      gelf-address: udp://172.17.0.1:12201
 
