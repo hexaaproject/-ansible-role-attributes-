@@ -26,8 +26,7 @@
       BRAND:                       "{{ BRAND }}"
       LOGLEVEL:                    "{{ LOGLEVEL }}"
     etc_hosts: "{{ ETC_HOSTS }}"
-    networks:
-      - name: elknet
+    networks: "{{ NETWORKS }}"
 #    log_driver: gelf
 #    log_options:
 #      gelf-address: udp://172.17.0.1:12201

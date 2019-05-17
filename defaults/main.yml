@@ -16,4 +16,6 @@ BEHIND_SSL_TERMINATOR:      ~
 METADATA_NOSSL_ENDPOINTS:   ~
 IMAGE_TAG: latest
 
+NETWORKS:
+  - name: 'elknet'
 ETC_HOSTS: {}
