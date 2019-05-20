@@ -1,19 +1,19 @@
 ---
 # defaults file for ansible-role-attributes
-ENTITY_ID:                  ~
-DISCOVERY_URL:              ~
-SUPPORT_CONTACT:            ~
-SUPPORT_CONTACT_SURNAME:    ~
-SUPPORT_CONTACT_GIVEN_NAME: ~
-XML_METADATA_PROVIDER:      ~
-DYNAMIC_METADATA_PROVIDER:  ~
-ATTRIBUTE_RESOLVERS:        ~
-VIRTUAL_HOST:               ~
-LETSENCRYPT_HOST:           ~
-LETSENCRYPT_EMAIL:          ~
-NOSSL:                      ~
-BEHIND_SSL_TERMINATOR:      ~
-METADATA_NOSSL_ENDPOINTS:   ~
+ENTITY_ID:                  ""
+DISCOVERY_URL:              ""
+SUPPORT_CONTACT:            ""
+SUPPORT_CONTACT_SURNAME:    "Support"
+SUPPORT_CONTACT_GIVEN_NAME: ""
+XML_METADATA_PROVIDER:      ""
+DYNAMIC_METADATA_PROVIDER:  ""
+ATTRIBUTE_RESOLVERS:        ""
+VIRTUAL_HOST:               ""
+LETSENCRYPT_HOST:           ""
+LETSENCRYPT_EMAIL:          ""
+NOSSL:                      ""
+BEHIND_SSL_TERMINATOR:      ""
+METADATA_NOSSL_ENDPOINTS:   ""
 IMAGE_TAG: latest
 
 NETWORKS:
