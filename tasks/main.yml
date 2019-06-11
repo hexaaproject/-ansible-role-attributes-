@@ -1,5 +1,9 @@
 ---
 # tasks file for ansible-role-attributes
+- name: Ensure networks present
+  docker_network:
+    name: "{{ item }}"
+  with_items: NETWORKS
 - name: Start docker container
   docker_container:
     name: "{{ CONTAINER_NAME }}"
