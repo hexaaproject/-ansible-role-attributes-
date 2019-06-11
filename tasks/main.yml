@@ -22,7 +22,7 @@
       DYNAMIC_METADATA_PROVIDER:   "{{ DYNAMIC_METADATA_PROVIDER }}"
       ATTRIBUTE_RESOLVERS:         "{{ ATTRIBUTE_RESOLVERS }}"
       VIRTUAL_HOST:                "{{ VIRTUAL_HOST }}"
-      # LETSENCRYPT_HOST:            "{{ VIRTUAL_HOST }}"
+      LETSENCRYPT_HOST:            "{{ VIRTUAL_HOST }}"
       # LETSENCRYPT_EMAIL:           "{{ LETSENCRYPT_EMAIL }}"
       NOSSL:                       "{{ NOSSL }}"
       BEHIND_SSL_TERMINATOR_PROXY: "{{ BEHIND_SSL_TERMINATOR_PROXY }}"
