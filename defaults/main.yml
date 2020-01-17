@@ -15,6 +15,7 @@ NOSSL:                       ""
 BEHIND_SSL_TERMINATOR_RPOXY: ""
 METADATA_NOSSL_ENDPOINTS:    ""
 IMAGE_TAG: latest
+AUTHN_CONTEXT_CLASS_REF:     ""
 
 NETWORKS:
   - name: 'elknet'

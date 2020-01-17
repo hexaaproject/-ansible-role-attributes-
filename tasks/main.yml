@@ -28,6 +28,7 @@
       BEHIND_SSL_TERMINATOR_PROXY: "{{ BEHIND_SSL_TERMINATOR_PROXY }}"
       METADATA_NOSSL_ENDPOINTS:    "{{ METADATA_NOSSL_ENDPOINTS }}"
       BRAND:                       "{{ BRAND }}"
+      AUTHN_CONTEXT_CLASS_REF:     "{{ AUTHN_CONTEXT_CLASS_REF }}"
       LOGLEVEL:                    "{{ LOGLEVEL }}"
     etc_hosts: "{{ ETC_HOSTS }}"
     networks: "{{ NETWORKS }}"
