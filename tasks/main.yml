@@ -32,6 +32,7 @@
       LOGLEVEL:                    "{{ LOGLEVEL }}"
     etc_hosts: "{{ ETC_HOSTS }}"
     networks: "{{ NETWORKS }}"
+    labels: "{{ LABELS }}"
 #    log_driver: gelf
 #    log_options:
 #      gelf-address: udp://172.17.0.1:12201
